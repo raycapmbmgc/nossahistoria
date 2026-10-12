@@ -1,0 +1,2 @@
+Coloque aqui as fotos do livro (JPG, PNG ou WebP) e use o caminho no js/data.js.
+Exemplo: fotos/capa.jpg  →  capa: { foto: { src: "fotos/capa.jpg" } }

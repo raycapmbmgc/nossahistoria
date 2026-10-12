@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>1 ano da nossa história</title>
+  <meta name="description" content="Um livro digital com a nossa história, mês a mês.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2322569b' d='M12 2l1.8 8.2L22 12l-8.2 1.8L12 22l-1.8-8.2L2 12l8.2-1.8z'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="on-cover">
+
+  <!-- Estrelinhas discretas ao fundo (geradas pelo JS) -->
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+
+  <main class="stage" id="stage">
+    <div class="book is-intro" id="book" role="region" aria-roledescription="livro" aria-label="Livro: 1 ano da nossa história">
+      <!-- As páginas são criadas pelo js/app.js a partir do js/data.js -->
+    </div>
+  </main>
+
+  <nav class="nav" id="nav" aria-label="Navegação do livro">
+    <button class="btn btn--ghost nav__btn" id="prev" type="button" aria-label="Página anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      <span>Voltar</span>
+    </button>
+
+    <div class="progress">
+      <span class="progress__label" id="progress-label">Página 1</span>
+      <div class="progress__track" id="progress-track" role="progressbar" aria-label="Progresso da leitura" aria-valuemin="1" aria-valuemax="1" aria-valuenow="1">
+        <div class="progress__fill" id="progress-fill"></div>
+      </div>
+    </div>
+
+    <button class="btn btn--primary nav__btn" id="next" type="button" aria-label="Próxima página">
+      <span>Próxima<span class="hide-sm"> página</span></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </nav>
+
+  <p class="sr-only" id="live" aria-live="polite"></p>
+
+  <noscript>
+    <p class="noscript">Este livro precisa de JavaScript ativado para ser folheado.</p>
+  </noscript>
+
+  <!-- 1) Conteúdo (edite este arquivo)  2) Funcionamento -->
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/slideshow.js"></script>
+</body>
+</html>
